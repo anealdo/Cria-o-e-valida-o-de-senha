@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e acesso por senha</title>
+</head>
+<body>
+        <script>
+        let senha=prompt("digite sua senha"); let repete; 
+            
+        for (cont=1; senha.length != 6 && cont < 3; cont++){
+            repete=prompt("insira a senha novamente");
+        }
+        if (cont >=3){
+                alert("você excedeu o nº de tentativas")
+            }else{
+        
+            valida=prompt("Redigite a senha de 6 digitos")    
+
+        for (cont=1; valida != senha && cont < 3; cont++){
+            valida=prompt("Insira a senha de validação novamente")
+        }if (cont >=3){
+                alert("você excedeu o nº de tentativas")
+            }else{
+                acesso=prompt("Digite a senha cadastrada")
+                for (cont=1; acesso != senha && cont < 3; cont++){
+                    acesso=prompt("Senha incorreta. Informe a senha de 6 digitos")
+                }if (cont>=3){
+                    alert("Você excedeu o nº de tentativas. Contate o administrador")
+                }else{
+                    alert("Acesso liberado")
+                }
+
+            }
+    }
+                
+        </script>
+</body>
+</html>
